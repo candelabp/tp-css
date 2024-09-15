@@ -1,0 +1,123 @@
+.titulo-ppal p{
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: solid;
+    background-color: rgb(147, 147, 246);
+}
+blockquote {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    font-style: italic;
+    color: #555;
+    background-color: #f9f9f9;
+    border-left: 5px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+.propiedades p{
+font-size: 15px;
+text-align: justify;
+text-transform: lowercase;
+text-decoration: overline;
+}
+.caja1{
+    padding: 5%;
+    margin: 1%;
+    border: black solid 2px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    background-color: pink;
+}
+.caja2{
+    padding: 5%;
+    margin: 1%;
+    border: black solid 5px; 
+    background-color: rgb(192, 255, 219);
+}
+.caja-relativa{
+    position: relative;
+    background-color: rgb(222, 137, 222);
+    padding: 1%;
+    top: 20px;  
+    left: 10px;
+}
+.caja-absoluta{
+    position: absolute;
+    background-color: purple;
+            
+    left: 50vh; 
+    z-index: 10;
+}
+.grid-container{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 10px;
+
+}
+.grid-item{
+    display: grid;
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(176, 245, 222);
+    border:rgb(147, 147, 246)
+
+}
+.animacion{
+width: 100px;
+height: 100px;
+background-color: red;
+transition:0.4s ease-in-out ;
+}
+.animacion:hover{
+    cursor:pointer;
+    background-color: blue;
+}   
+.mover{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation: moverr 1s infinite;
+    border-radius: 100%;
+}
+@keyframes moverr {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+    
+}
+@media (max-width: 768px) {
+    body {
+        background-color: #e6e6ff; /* Cambia el fondo en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 24px; /* Reduce el tamaño del texto del encabezado */
+    }
+
+    section {
+        max-width: 90%; /* Ancho ajustado para pantallas pequeñas */
+        padding: 10px;  /* Reduce el padding */
+        margin: 10px auto; /* Ajusta los márgenes */
+    }
+
+    .titulo-ppal p {
+        font-size: 20px; /* Ajusta el tamaño del texto de la clase titulo-ppal */
+    }
+
+    /* Ajustes para otros elementos */
+    .caja1, .caja2 {
+        padding: 3%; /* Reduce el padding para cajas en pantallas pequeñas */
+    }
+   
+}
+
